@@ -1,0 +1,13 @@
+classes:
+- system.horizon.server.single
+- system.horizon.server.plugin.theme
+- cluster.mcp10_ovs_dpdk
+parameters:
+  _param:
+    horizon_site_branding: OpenStack Dashboard
+    horizon_dashboard_theme: mirantis
+    openstack_version: liberty
+  linux:
+    network:
+      interface:
+        eth1: ${_param:linux_single_interface}
